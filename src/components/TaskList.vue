@@ -15,6 +15,7 @@ function handleNext(e: KeyboardEvent) {
   const nextEl = (e.target as any).nextElementSibling as HTMLDivElement
   nextEl?.focus()
 }
+
 </script>
 
 <template>
