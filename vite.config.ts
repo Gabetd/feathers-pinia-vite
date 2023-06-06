@@ -11,6 +11,9 @@ import { feathersPiniaAutoImport } from 'feathers-pinia'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  server: {
+    host: true
+  },
   resolve: {
     alias: {
       '#src/': `${path.resolve(__dirname, 'src')}/`,
