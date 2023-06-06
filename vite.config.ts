@@ -2,12 +2,12 @@ import path from 'path'
 import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
 import Pages from 'vite-plugin-pages'
-import AutoImport from 'unplugin-auto-import/vite'
+// import AutoImport from 'unplugin-auto-import/vite'
 import Layouts from 'vite-plugin-vue-layouts'
 import Components from 'unplugin-vue-components/vite'
 import Icons from 'unplugin-icons/vite'
 import IconsResolver from 'unplugin-icons/resolver'
-import { feathersPiniaAutoImport } from 'feathers-pinia'
+// import { feathersPiniaAutoImport } from 'feathers-pinia'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -32,20 +32,20 @@ export default defineConfig({
     Layouts(),
 
     // https://github.com/antfu/unplugin-auto-import
-    AutoImport({
-      imports: [
-        'vue',
-        'vue-router',
-        'vue-i18n',
-        'vue/macros',
-        '@vueuse/head',
-        '@vueuse/core',
-        feathersPiniaAutoImport,
-      ],
-      dts: 'src/auto-imports.d.ts',
-      dirs: ['src/composables', 'src/models', 'src/stores'],
-      vueTemplate: true,
-    }),
+    // AutoImport({
+    //   imports: [
+    //     'vue',
+    //     'vue-router',
+    //     'vue-i18n',
+    //     'vue/macros',
+    //     '@vueuse/head',
+    //     '@vueuse/core',
+    //     feathersPiniaAutoImport,
+    //   ],
+    //   dts: 'src/auto-imports.d.ts',
+    //   dirs: ['src/composables', 'src/models', 'src/stores'],
+    //   vueTemplate: true,
+    // }),
 
     Components({
       // allow auto load markdown components under `./src/components/`
@@ -67,7 +67,9 @@ export default defineConfig({
       ],
     }),
 
-    // https://github.com/antfu/unplugin-icons#migrate-from-vite-plugin-icons
+    // // https://github.com/antfu/unplugin-icons#migrate-from-vite-plugin-icons
     Icons(),
   ],
 })
+
+
