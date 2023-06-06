@@ -3,7 +3,7 @@ import socketio from '@feathersjs/socketio-client'
 import io from 'socket.io-client'
 import { useStorage } from '@vueuse/core'
 
-const socket = io('http://localhost:3030', { transports: ['websocket'] })
+const socket = io('https://feathers-pinia-api-1.Gabetd.repl.co', { transports: ['websocket'] })
 
 // Store JWT in SSG-compatible storage
 const storageKey = 'feathers-jwt'

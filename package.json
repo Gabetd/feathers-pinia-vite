@@ -20,7 +20,7 @@
     "daisy-ui-kit": "^1.0.0",
     "daisyui": "^2.46.0",
     "feathers-pinia": "^2.0.0-pre.13",
-    "feathers-pinia-api": "http://localhost:3030/feathers-pinia-api-0.0.0.tgz",
+    "feathers-pinia-api": "https://feathers-pinia-api-1.Gabetd.repl.co/feathers-pinia-api-0.0.0.tgz",
     "jwt-decode": "^3.1.2",
     "pinia": "^2.0.28",
     "socket.io-client": "^4.5.4",
