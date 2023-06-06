@@ -16,7 +16,7 @@
     "strictPropertyInitialization": false,
     "types": ["vite-plugin-vue-layouts/client", "unplugin-icons/types/vue"],
     "paths": {
-      "~/*": ["src/*"]
+      "#src/*": ["src/*"]
     }
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "src/components.d.ts"],

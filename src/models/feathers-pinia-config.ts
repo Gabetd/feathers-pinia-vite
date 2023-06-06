@@ -1,4 +1,4 @@
-import { pinia } from '~/modules/pinia'
+import { pinia } from '#src/modules/pinia'
 
 /**
  * Returns a configuration object for Feathers-Pinia
