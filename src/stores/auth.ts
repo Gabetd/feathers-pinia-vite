@@ -1,16 +1,15 @@
 import { acceptHMRUpdate, defineStore } from 'pinia'
+import { useAuth } from 'feathers-pinia'
+
+// stores/auth.ts
 
 export const useAuthStore = defineStore('auth', () => {
-  const userStore = useUserStore()
   const { api } = useFeathers()
 
-  const auth = useAuth({ api, userStore })
+  const auth = useAuth({ api, servicePath: 'users' })
 
-  auth.reAuthenticate()
-
-  return { ...auth }
+  return auth
 })
 
 if (import.meta.hot)
-  import.meta.hot.accept(acceptHMRUpdate(useAuthStore, import.meta.hot))
-
+  import.meta.hot.accept(acceptHMRUpdate(useAuthStore as any, import.meta.hot))

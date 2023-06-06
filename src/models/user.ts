@@ -1,8 +1,8 @@
 import {
   type ModelInstance,
-  associateFind,
+  // associateFind,
   feathersPiniaHooks,
-  useFeathersModel,
+  // useFeathersModel,
   useInstanceDefaults,
 } from 'feathers-pinia'
 
@@ -30,13 +30,13 @@ export const useUserModel = () => {
 
       // add tasks to each user
       const Task = useTaskModel()
-      const withTasks = associateFind(withDefaults, 'tasks', {
-        Model: Task,
-        makeParams: (data) => ({ query: { userId: data._id } }),
-        handleSetInstance(task) {
-          task.userId = data._id
-        },
-      })
+      // const withTasks = associateFind(withDefaults, 'tasks', {
+      //   Model: Task,
+      //   makeParams: (data) => ({ query: { userId: data._id } }),
+      //   handleSetInstance(task) {
+      //     task.userId = data._id
+      //   },
+      // })
       return withTasks
     }
     return useFeathersModel<User, UserData, UserQuery, typeof modelFn>({ name, idField, service }, modelFn)
