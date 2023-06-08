@@ -28,7 +28,10 @@ const logout = async () => {
           <DaisyButton @click="navigate" :ghost="!isActive" :primary="isActive">App Home</DaisyButton>
         </RouterLink>
         <RouterLink to="/app/reminders" custom v-slot="{ isActive, href, navigate }">
-          <DaisyButton @click="navigate" :ghost="!isActive" :primary="isActive">Reminders</DaisyButton>
+          <DaisyButton @click="navigate" :ghost="!isActive" :primary="isActive">
+            Reminders
+            {{ href }}
+          </DaisyButton>
         </RouterLink>
       </DaisyButtonGroup>
     </DaisyNavbarCenter>

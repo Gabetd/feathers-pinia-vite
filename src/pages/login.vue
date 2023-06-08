@@ -7,7 +7,7 @@ import { _ } from '@feathersjs/commons'
 const router = useRouter()
 
 const authStore = useAuthStore()
-const { userStore } = useUserModel()
+
 const state = reactive({
   email: '',
   password: '',
@@ -45,13 +45,11 @@ const handleLogin = async () => {
     loginAndRedirect({ email, password })
   }
 }
-const handleSignup = async () => {
-  const isValid = await v$.value.$validate()
-  if (isValid) {
-    const { email, password } = state
-    const user = await userStore.create({ email, password })
-    loginAndRedirect({ email, password })
-  }
+const { api } = useFeathers()
+async function handleSignup(fields: State) {
+  const { email, password } = fields
+  await api.service('users').create({ email, password })
+  loginAndRedirect(fields)
 }
 const loginAndRedirect = async (data: { email: string; password: string }) => {
   authStore
