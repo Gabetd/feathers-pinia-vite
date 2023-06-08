@@ -1,7 +1,8 @@
 import type { Tasks } from 'feathers-pinia-api'
-import type { FeathersInstance } from '~~/feathers-pinia-3'
+// import type { ClientApplication } from 'feathers-pinia-api'
+import type { TransportConnection } from '@feathersjs/feathers' // TODO: Is this right? is so PR into client lib
 
-export function setupTask(data: FeathersInstance<Tasks>): Record<string, any> {
+export function setupTask(data: TransportConnection<Tasks>): Record<string, any> {
   const defaults = {
     description: '',
     isComplete: false,

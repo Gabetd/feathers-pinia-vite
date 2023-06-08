@@ -3,10 +3,11 @@
 import { useVuelidate } from '@vuelidate/core'
 import { email, helpers, minLength, required, sameAs } from '@vuelidate/validators'
 import { _ } from '@feathersjs/commons'
+
 const router = useRouter()
 
 const authStore = useAuthStore()
-const { userStore } = useUserStore()
+const { userStore } = useUserModel()
 const state = reactive({
   email: '',
   password: '',
@@ -52,7 +53,7 @@ const handleSignup = async () => {
     loginAndRedirect({ email, password })
   }
 }
-const loginAndRedirect = (data: { email: string; password: string }) => {
+const loginAndRedirect = async (data: { email: string; password: string }) => {
   authStore
     .authenticate({ strategy: 'local', ...state })
     .then(() => {

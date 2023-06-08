@@ -4,10 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --force",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
-    "preinstall": "npx only-allow pnpm"
+    "preinstall": "npm_config_yes=true npx only-allow pnpm"
   },
   "dependencies": {
     "@feathersjs/authentication-client": "^5.0.5",

@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import { setupLayouts } from 'virtual:generated-layouts'
 import generatedRoutes from '~pages'
 
+console.log(setupLayouts)
 const routes = setupLayouts(generatedRoutes)
 
 export const router = createRouter({

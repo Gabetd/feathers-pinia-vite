@@ -1,7 +1,7 @@
 
 hidden = [".config", "package-lock.json"]
+# run = "npm run dev"
 run = "npm run dev"
-
 [[hints]]
 regex = "Error \\[ERR_REQUIRE_ESM\\]"
 message = "We see that you are using require(...) inside your code. We currently do not support this syntax. Please use 'import' instead when using external modules. (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)"
@@ -11,18 +11,19 @@ channel = "stable-22_11"
 
 [env]
 XDG_CONFIG_HOME = "$REPL_HOME/.config"
-PATH = "$REPL_HOME/.config/npm/node_global/bin:$REPL_HOME/node_modules/.bin"
+PATH = "$REPL_HOME/.config/npm/node_global/bin:$REPL_HOME/node_modules/.bin:$REPL_HOME/.config/pnpm"
 npm_config_prefix = "$REPL_HOME/.config/npm/node_global"
+PNPM_HOME = "$REPL_HOME/.config/pnpm"
 
 [gitHubImport]
 requiredFiles = [".replit", "replit.nix", ".config", "package.json", "package-lock.json"]
 
 [packager]
-language = "nodejs"
+language = "no"
 
   [packager.features]
-  packageSearch = true
-  guessImports = true
+  packageSearch = false
+  guessImports = false
   enabledForHosting = false
 
 [unitTest]
