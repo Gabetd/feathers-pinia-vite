@@ -28,9 +28,6 @@ export default defineConfig({
     // https://github.com/hannoeru/vite-plugin-pages
     Pages(),
 
-    // https://github.com/JohnCampionJr/vite-plugin-vue-layouts
-    Layouts(),
-
     // https://github.com/antfu/unplugin-auto-import
     AutoImport({
       imports: [
