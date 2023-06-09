@@ -33,7 +33,7 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v3
         with:
-          node-version: lts -n
+          node-version: lts/*
           cache: 'pnpm' # No further changes needed
       - name: Install dependencies
         run: npx -y --package=@antfu/ni -- ni
