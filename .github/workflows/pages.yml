@@ -33,7 +33,7 @@ jobs:
       - uses: pnpm/action-setup@v2
         with:
           version: latest
-      - run: pnpm --fix-lockfile
+      - run: pnpm i --fix-lockfile
       - name: Set up Node
         uses: actions/setup-node@v3
         with:
