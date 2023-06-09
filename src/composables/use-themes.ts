@@ -1,5 +1,5 @@
-import { reactive, computed } from 'vue'
-import { useColorMode as ucm } from '@vueuse/core'
+import  { reactive, computed } from 'vue'
+import  { useColorMode as ucm } from '@vueuse/core'
 
 export const useColorMode = () => {
   const state = reactive({

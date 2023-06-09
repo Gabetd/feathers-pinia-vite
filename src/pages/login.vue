@@ -1,8 +1,8 @@
 <script setup lang="ts">
 // https://vuelidate-next.netlify.app/
-import { useVuelidate } from '@vuelidate/core'
-import { email, helpers, minLength, required, sameAs } from '@vuelidate/validators'
-import { _ } from '@feathersjs/commons'
+import  { useVuelidate } from '@vuelidate/core'
+import  { email, helpers, minLength, required, sameAs } from '@vuelidate/validators'
+import  { _ } from '@feathersjs/commons'
 
 const router = useRouter()
 

@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import Logo from '~icons/logos/feathersjs'
-import UserIcon from '~icons/feather/user'
-import ChevronDownIcon from '~icons/feather/chevron-down'
-import LoginIcon from '~icons/feather/log-in'
+import  Logo from '~icons/logos/feathersjs'
+import  UserIcon from '~icons/feather/user'
+import  ChevronDownIcon from '~icons/feather/chevron-down'
+import  LoginIcon from '~icons/feather/log-in'
 
 const authStore = useAuthStore()
 const router = useRouter()

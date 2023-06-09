@@ -1,6 +1,6 @@
-import type { Tasks } from 'feathers-pinia-api'
-// import type { ClientApplication } from 'feathers-pinia-api'
-import type { TransportConnection } from '@feathersjs/feathers' // TODO: Is this right? is so PR into client lib
+import  type { Tasks } from 'feathers-pinia-api'
+// import  type { ClientApplication } from 'feathers-pinia-api'
+import  type { TransportConnection } from '@feathersjs/feathers' // TODO: Is this right? is so PR into client lib
 
 export function setupTask(data: TransportConnection<Tasks>): Record<string, any> {
   const defaults = {

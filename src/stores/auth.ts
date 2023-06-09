@@ -1,5 +1,5 @@
-import { acceptHMRUpdate, defineStore } from 'pinia'
-import { useAuth } from 'feathers-pinia'
+import  { acceptHMRUpdate, defineStore } from 'pinia'
+import  { useAuth } from 'feathers-pinia'
 // stores/auth.ts
 
 export const useAuthStore = defineStore('auth', () => {

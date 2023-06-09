@@ -1,6 +1,6 @@
-import type { AnyData } from 'feathers-pinia'
-import { type FeathersPiniaService } from 'feathers-pinia'
-import { api } from '../feathers'
+import  type { AnyData } from 'feathers-pinia'
+import  { type FeathersPiniaService } from 'feathers-pinia'
+import  { api } from '../feathers'
 
 export const useFeathers = () => {
   return { api }

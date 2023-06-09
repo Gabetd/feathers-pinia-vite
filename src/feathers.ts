@@ -1,13 +1,13 @@
 // API types from Feathers Dove server
-import { createClient } from 'feathers-pinia-api'
+import  { createClient } from 'feathers-pinia-api'
 // socket.io imports for the browser
-import FSIOCPkg from '@feathersjs/socketio-client'
-import io from 'socket.io-client'
-import { useStorage } from '@vueuse/core'
-import { OFetch, createPiniaClient } from 'feathers-pinia'
-import { createPinia } from 'pinia'
-import { setupUser } from './models/user.js'
-import { setupTask } from './models/task.js'
+import  FSIOCPkg from '@feathersjs/socketio-client'
+import  io from 'socket.io-client'
+import  { useStorage } from '@vueuse/core'
+import  { OFetch, createPiniaClient } from 'feathers-pinia'
+import  { createPinia } from 'pinia'
+import  { setupUser } from './models/user.js'
+import  { setupTask } from './models/task.js'
 
 const socketio = FSIOCPkg.default // TODO: PR A FIX
 export const pinia = createPinia() // TODO
