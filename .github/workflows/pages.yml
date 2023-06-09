@@ -40,7 +40,7 @@ jobs:
           node-version: lts/*
           cache: 'pnpm'
       - name: Install dependencies
-        run: npm i -g @antfu/ni only-allow && ni // --prod
+        run: npm i -g @antfu/ni only-allow && ni
       - name: Build
         run: npx vite build
       - name: Setup Pages
