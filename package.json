@@ -45,7 +45,7 @@
   },
   "stackblitz": {
     "installDependencies": false,
-    "startCommand": "pnpm i -g @antfu/ni > /dev/null && nr dev",
+    "startCommand": "pnpm i --ignore-scripts && pnpm run dev",
     "env": {
       "PATH": "/bin:/usr/bin:/usr/local/bin:/home/node_modules",
       "PNPM_HOME": "/home/node_modules",
