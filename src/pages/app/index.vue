@@ -4,9 +4,10 @@ meta:
 </route>
 
 <script setup lang="ts">
-const authStore = useAuthStore()
+const auth = useAuthStore()
 const router = useRouter()
-
+await auth.reAuthenticate()
+  
 const logout = async () => {
   await authStore.logout()
   router.push('/')

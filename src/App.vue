@@ -10,10 +10,15 @@ useHead({
   link: [],
 })
 
-const authStore = useAuthStore()
 </script>
 
 <template>
-  <Loading v-if="!authStore.isInitDone"> Loading </Loading>
-  <RouterView v-else />
+  <Suspense>
+    <RouterView />
+    
+    <!-- loading state via #fallback slot -->
+    <template #fallback>
+      Loading...
+    </template>
+  </Suspense>
 </template>
