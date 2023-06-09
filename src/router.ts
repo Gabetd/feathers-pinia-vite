@@ -1,9 +1,25 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import { setupLayouts } from 'virtual:generated-layouts'
-import generatedRoutes from '~pages'
+import indexPage from './pages/app/index.vue'
+import mePage from './pages/app/index.vue'
+import remindersPage from './pages/app/index.vue'
 
-console.log(setupLayouts)
-const routes = setupLayouts(generatedRoutes)
+const routes = [{
+  path: "/",
+  name: "loginPage",
+  component: indexPage,
+},
+{
+  path: "/me",
+  name: "listUser",
+  component: mePage,
+  meta: { requiresAuth: true }
+},
+{
+  path: "/reminders",
+  name: "showReminders",
+  component: remindersPage,
+  meta: { requiresAuth: true }
+}]
 
 export const router = createRouter({
   history: createWebHistory(),

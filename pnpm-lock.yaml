@@ -93,9 +93,6 @@ devDependencies:
   vite-plugin-pages:
     specifier: ^0.31.0
     version: 0.31.0(vite@4.3.9)
-  vite-plugin-vue-layouts:
-    specifier: ^0.8.0
-    version: 0.8.0(vite@4.3.9)(vue-router@4.2.2)(vue@3.3.4)
   vue-tsc:
     specifier: ^1.6.5
     version: 1.6.5(typescript@5.0.4)
@@ -1054,6 +1051,7 @@ packages:
 
   /@vue/devtools-api@6.5.0:
     resolution: {integrity: sha512-o9KfBeaBmCKl10usN4crU53fYtC1r7jJwdGKjPT24t348rHxgfpZ0xL3Xm/gLUYnc0oTp8LAmrxOeLyu6tbk2Q==}
+    dev: false
 
   /@vue/reactivity-transform@3.3.4:
     resolution: {integrity: sha512-MXgwjako4nu5WFLAjpBnCj/ieqcjE2aJBINUNQzkZQfzIZA4xn+0fV1tIYBJvvva3N3OvKGofRLvQIwEQPpaXw==}
@@ -3821,23 +3819,6 @@ packages:
       - supports-color
     dev: true
 
-  /vite-plugin-vue-layouts@0.8.0(vite@4.3.9)(vue-router@4.2.2)(vue@3.3.4):
-    resolution: {integrity: sha512-UZW2nSV2LraTSe7gsAL46hfdi7a0X1RvkGGoJVtA2O8beu7anzpXFwQLou8+kHy31CzVycT4gIPySBsHhtBN5g==}
-    peerDependencies:
-      vite: ^2.5.0 || ^3.0.0-0 || ^4.0.0
-      vue: ^2.6.12 || ^3.2.4
-      vue-router: ^3.5.1 || ^4.0.11
-    dependencies:
-      '@vue/compiler-sfc': 3.3.4
-      debug: 4.3.4
-      fast-glob: 3.2.12
-      vite: 4.3.9
-      vue: 3.3.4
-      vue-router: 4.2.2(vue@3.3.4)
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
   /vite@4.3.9:
     resolution: {integrity: sha512-qsTNZjO9NoJNW7KnOrgYwczm0WctJ8m/yqYAMAK9Lxt4SoySUfS5S8ia9K7JHpa3KEeMfyF8LoJ3c5NeBJy6pg==}
     engines: {node: ^14.18.0 || >=16.0.0}
@@ -3906,6 +3887,7 @@ packages:
     dependencies:
       '@vue/devtools-api': 6.5.0
       vue: 3.3.4
+    dev: false
 
   /vue-template-compiler@2.7.14:
     resolution: {integrity: sha512-zyA5Y3ArvVG0NacJDkkzJuPQDF8RFeRlzV2vLeSnhSpieO6LK2OVbdLPi5MPPs09Ii+gMO8nY4S3iKQxBxDmWQ==}
