@@ -46,7 +46,7 @@
   "stackblitz": {
     "installDependencies": false,
     "startCommand": "pnpm i -g @antfu/ni > /dev/null && nr dev",
-    "env": {
+    "x-env": {
       "PATH": "/bin:/usr/bin:/usr/local/bin:/home/node_modules",
       "PNPM_HOME": "/home/node_modules",
       "NI_DEFAULT": "pnpm",
