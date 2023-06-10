@@ -27,11 +27,6 @@ export const router = createRouter({
 })
 
 router.beforeEach(async (to, from) => {
-  if (to..user) {
-    authStore.loginRedirect = to
-    return { path: '/login' }
-  }
-  
   const authStore = useAuthStore()
 
   const publicRoutes = ['/', '/login']
