@@ -21,7 +21,7 @@
     "@vueuse/head": "^1.1.26",
     "daisy-ui-kit": "^1.0.7",
     "daisyui": "^3.0.3",
-    "feathers-pinia": "^3.0.2",
+    "feathers-pinia": "^3.0.3",
     "feathers-pinia-api": "https://feathers-pinia-api-1.Gabetd.repl.co/feathers-pinia-api-0.0.0.tgz",
     "jwt-decode": "^3.1.2",
     "pinia": "^2.1.3",
