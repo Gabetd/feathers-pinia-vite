@@ -3,22 +3,20 @@ import  indexPage from './pages/app/index.vue'
 import  mePage from './pages/app/index.vue'
 import  remindersPage from './pages/app/index.vue'
 
-const b = import.meta.env.VITE_BASE || ''
-
 const routes = [{
-  path: b + '/',
+  path: '/',
   name: "loginPage",
   component: indexPage,
 },
 {
-  path: b + '/me',
+  path: '/me',
   name: 'listUser',
   component: mePage,
   meta: { requiresAuth: true }
 },
 {
-  path: "/reminders",
-  name: "showReminders",
+  path: '/reminders',
+  name: 'showReminders',
   component: remindersPage,
   meta: { requiresAuth: true }
 }]
