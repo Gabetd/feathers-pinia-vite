@@ -3,14 +3,16 @@ import  indexPage from './pages/app/index.vue'
 import  mePage from './pages/app/index.vue'
 import  remindersPage from './pages/app/index.vue'
 
+const b = import.meta.env.VITE_BASE || ''
+
 const routes = [{
-  path: "/",
+  path: b + '/',
   name: "loginPage",
   component: indexPage,
 },
 {
-  path: "/me",
-  name: "listUser",
+  path: b + '/me',
+  name: 'listUser',
   component: mePage,
   meta: { requiresAuth: true }
 },
@@ -22,11 +24,16 @@ const routes = [{
 }]
 
 export const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(import.meta.env.VITE_BASE || ''),
   routes,
 })
 
 router.beforeEach(async (to, from) => {
+  if (to..user) {
+    authStore.loginRedirect = to
+    return { path: '/login' }
+  }
+  
   const authStore = useAuthStore()
 
   const publicRoutes = ['/', '/login']
