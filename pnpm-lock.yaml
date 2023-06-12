@@ -38,8 +38,8 @@ dependencies:
     specifier: ^3.0.3
     version: 3.0.20(postcss@8.4.24)
   feathers-pinia:
-    specifier: ^3.0.2
-    version: 3.0.2(@feathersjs/adapter-commons@5.0.5)(@feathersjs/commons@5.0.5)(@feathersjs/feathers@5.0.5)(pinia@2.1.3)(vue@3.3.4)
+    specifier: ^3.0.3
+    version: 3.0.3(@feathersjs/adapter-commons@5.0.5)(@feathersjs/commons@5.0.5)(@feathersjs/feathers@5.0.5)(pinia@2.1.3)(vue@3.3.4)
   feathers-pinia-api:
     specifier: https://feathers-pinia-api-1.Gabetd.repl.co/feathers-pinia-api-0.0.0.tgz
     version: '@feathers-pinia-api-1.Gabetd.repl.co/feathers-pinia-api-0.0.0.tgz'
@@ -1984,8 +1984,8 @@ packages:
     dependencies:
       reusify: 1.0.4
 
-  /feathers-pinia@3.0.2(@feathersjs/adapter-commons@5.0.5)(@feathersjs/commons@5.0.5)(@feathersjs/feathers@5.0.5)(pinia@2.1.3)(vue@3.3.4):
-    resolution: {integrity: sha512-zQoYiyO2C8H0fGR+DLjHnnKvlsFQSZuFAmAgJUVWDfaAskdveaVO346jQ9c5GOnK7uyTW3LXabhYbKGrdYdq0w==}
+  /feathers-pinia@3.0.3(@feathersjs/adapter-commons@5.0.5)(@feathersjs/commons@5.0.5)(@feathersjs/feathers@5.0.5)(pinia@2.1.3)(vue@3.3.4):
+    resolution: {integrity: sha512-pXAwNFlXxYv2DVJoHHuqbkbejUIg6lpq+rGW3tYinegJi4t4C+MXvUwOb+vrJUjBVsIy9/usBVRZydre5gqtvA==}
     peerDependencies:
       '@feathersjs/adapter-commons': ^5.0.0
       '@feathersjs/commons': ^5.0.0

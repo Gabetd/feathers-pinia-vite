@@ -1,5 +1,5 @@
 import  { createRouter, createWebHistory } from 'vue-router'
-import  indexPage from './pages/app/index.vue'
+import  indexPage from './pages/index.vue'
 import  mePage from './pages/app/index.vue'
 import  remindersPage from './pages/app/index.vue'
 
