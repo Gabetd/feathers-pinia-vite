@@ -14,8 +14,10 @@ const logout = async () => {
 }
 </script>
 
-<template>
-  <DaisyFlex col items-center justify-center class="h-full gap-2 text-center">
+<template>  
+<div class="app-layout h-full">
+  <AppNav />
+  <DaisyFlex col items-center justify-center class="h-full gap-2 text-center -mt-16 pt-16">
     <DaisyText size="7xl">App Home</DaisyText>
     <DaisyText size="4xl">You have arrived!</DaisyText>
     <DaisyText class="mt-5">You logged in like a boss.</DaisyText>
@@ -23,4 +25,5 @@ const logout = async () => {
       <DaisyButton primary>Return to Home</DaisyButton>
     </RouterLink>
   </DaisyFlex>
+</div>
 </template>

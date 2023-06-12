@@ -1,21 +1,34 @@
 import  { createRouter, createWebHistory } from 'vue-router'
 import  indexPage from './pages/index.vue'
-import  mePage from './pages/app/index.vue'
-import  remindersPage from './pages/app/index.vue'
+import  mePage from './pages/app/me.vue'
+import  remindersPage from './pages/app/reminders.vue'
+import loginPage from './pages/login.vue'
+import appIndex from './pages/app/index.vue'
 
 const routes = [{
   path: '/',
-  name: "loginPage",
+  name: "home",
   component: indexPage,
 },
 {
-  path: '/me',
+  path: '/login',
+  name: "loginPage",
+  component: loginPage,
+},
+{
+  path: '/app',
+  name: 'appIndex',
+  component: appIndex,
+  meta: { requiresAuth: true }
+},
+{
+  path: '/app/me',
   name: 'listUser',
   component: mePage,
   meta: { requiresAuth: true }
 },
 {
-  path: '/reminders',
+  path: '/app/reminders',
   name: 'showReminders',
   component: remindersPage,
   meta: { requiresAuth: true }
